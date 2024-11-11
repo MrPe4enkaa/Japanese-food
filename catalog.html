@@ -1,0 +1,589 @@
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Каталог</title>
+    <link rel="stylesheet" href="catalog.css">
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="slider.css">
+    <link rel="stylesheet" href="fonts.css">
+    <link rel="stylesheet" href="lists.css">
+    <link rel="shortcut icon" href="Images/Logotip.png" />
+    <link rel="stylesheet" href="login.css">
+</head>
+
+<body>
+    <dialog id="Okno">
+        <div class="dialog">
+            <p class="heading">Авторизация</p>
+            <p class="text">Имя</p>
+            <input type="text" id="name">
+            <p class="text">Телефон</p>
+            <input type="tel" id="phone" maxlength="13">
+            <p class="text">Адрес</p>
+            <input type="text" id="address">
+            <button class="log" id="log_in">Авторизоваться</button>
+            <button class="exit" id="exit" onclick="window.Okno.close()">Закрыть</button>
+        </div>
+    </dialog>
+
+    <dialog id="Login">
+        <div class="dialog2">
+            <p class="heading">Ваши данные</p>
+            <p class="text">Имя</p>
+            <input type="text" id="user_name" disabled>
+            <p class="text">Телефон</p>
+            <input type="tel" id="user_phone" disabled>
+            <p class="text">Адрес</p>
+            <input type="text" id="user_address" disabled>
+            <button class="log" id="unlog">Выйти из аккаунта</button>
+            <button class="exit" onclick="window.Login.close()">Закрыть</button>
+        </div>
+    </dialog>
+
+    <dialog id="aboutProduct">
+        <div class="dialogDescription">
+            <div id="divImg">
+            </div>
+            <div id="descript">
+                <div>
+                    <p id="nameProduct">Товар</p>
+                    <p id="description">Информация</p>
+                </div>
+                <div>
+                    <button class="exit" id="exit" onclick="window.aboutProduct.close()">Закрыть</button>
+                </div>
+            </div>
+        </div>
+    </dialog>
+
+    <header>
+        <div class="shapka">
+            <div class="header_left">
+                <p>Японская кухня</p>
+            </div>
+            <div class="header_right" id="head_right">
+                <a href="basket.html"><img src="Images/Header/bag.png" alt="bag_png"></a>
+                <button id="open" onclick="window.Okno.showModal()"><img src="Images/Header/avatar.png" alt="bag_png"></button>
+            </div>
+        </div>
+    </header>
+
+    <section class="lists">
+        <a href="index.html">Главная</a>
+        <a href="catalog.html">Каталог</a>
+        <a href="contacts.html">Контакты</a>
+    </section>
+
+    <section class="section_one">
+        <div>
+            <p class="dishes_text">Блюда c лапшой</p>
+        </div>
+        <div class="dishes">
+            <div class="sect">
+                <div class="cards">
+                    <img src="Images/Catalog/Udon/1.png" alt="udon" class="img1">
+                    <div>
+                        <p>Удон с говядиной</p>
+                        <img src="Images/Catalog/Information.png" onclick="window.aboutProduct.showModal()" class="info" id="info1">
+                    </div>
+                    <div>
+                        <div class="left">
+                            <p id="price1">8.3р</p>
+                        </div>
+                        <div class="right" id="c1">
+                            <input type="button" value="В корзину" class="butt" id="button1">
+                        </div>
+                    </div>
+                </div>
+                <div class="cards">
+                    <img src="Images/Catalog/Udon/2.png" alt="udon" class="img2">
+                    <div>
+                        <p>Удон с курицей</p>
+                        <img src="Images/Catalog/Information.png" onclick="window.aboutProduct.showModal()" class="info" id="info2">
+                    </div>
+                    <div>
+                        <div class="left">
+                            <p id="price2">8.5р</p>
+                        </div>
+                        <div class="right" id="c2">
+                            <input type="button" value="В корзину" class="butt" id="button2">
+                        </div>
+                    </div>
+                </div>
+                <div class="cards">
+                    <img src="Images/Catalog/Udon/1.png" alt="udon" class="img3">
+                    <div>
+                        <p>Удон со свининой</p>
+                        <img src="Images/Catalog/Information.png" onclick="window.aboutProduct.showModal()" class="info" id="info3">
+                    </div>
+                    <div>
+                        <div class="left">
+                            <p id="price3">8.4р</p>
+                        </div>
+                        <div class="right" id="c3">
+                            <input type="button" value="В корзину" class="butt" id="button3">
+                        </div>
+                    </div>
+                </div>
+                <div class="cards">
+                    <img src="Images/Catalog/Soba/1.png" alt="soba" class="img4">
+                    <div>
+                        <p>Соба с говядиной</p>
+                        <img src="Images/Catalog/Information.png" onclick="window.aboutProduct.showModal()" class="info" id="info4">
+                    </div>
+                    <div>
+                        <div class="left">
+                            <p id="price4">8.2р</p>
+                        </div>
+                        <div class="right" id="c4">
+                            <input type="button" value="В корзину" class="butt" id="button4">
+                        </div>
+                    </div>
+                </div>
+                <div class="cards">
+                    <img src="Images/Catalog/Soba/2.png" alt="soba" class="img5">
+                    <div>
+                        <p>Соба с курицей</p>
+                        <img src="Images/Catalog/Information.png" onclick="window.aboutProduct.showModal()" class="info" id="info5">
+                    </div>
+                    <div>
+                        <div class="left">
+                            <p id="price5">8.4р</p>
+                        </div>
+                        <div class="right" id="c5">
+                            <input type="button" value="В корзину" class="butt" id="button5">
+                        </div>
+                    </div>
+                </div>
+                <div class="cards">
+                    <img src="Images/Catalog/Soba/3.png" alt="soba" class="img6">
+                    <div>
+                        <p>Соба со свининой</p>
+                        <img src="Images/Catalog/Information.png" onclick="window.aboutProduct.showModal()" class="info" id="info6">
+                    </div>
+                    <div>
+                        <div class="left">
+                            <p id="price6">8.3р</p>
+                        </div>
+                        <div class="right" id="c6">
+                            <input type="button" value="В корзину" class="butt" id="button6">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section_two">
+        <div>
+            <p class="dishes_text">Суши и роллы</p>
+        </div>
+        <div class="dishes">
+            <div class="sect">
+                <div class="cards">
+                    <img src="Images/Catalog/Sushi/1.png" alt="sushi" class="img7">
+                    <div>
+                        <p>Роллы “Мидори”</p>
+                        <img src="Images/Catalog/Information.png" onclick="window.aboutProduct.showModal()" class="info" id="info7">
+                    </div>
+                    <div>
+                        <div class="left">
+                            <p id="price7">12.2р</p>
+                        </div>
+                        <div class="right" id="c7">
+                            <input type="button" value="В корзину" class="butt" id="button7">
+                        </div>
+                    </div>
+                </div>
+                <div class="cards">
+                    <img src="Images/Catalog/Sushi/2.png" alt="sushi" class="img8">
+                    <div>
+                        <p>Роллы “Дракон”</p>
+                        <img src="Images/Catalog/Information.png" onclick="window.aboutProduct.showModal()" class="info" id="info8">
+                    </div>
+                    <div>
+                        <div class="left">
+                            <p id="price8">13.1р</p>
+                        </div>
+                        <div class="right" id="c8">
+                            <input type="button" value="В корзину" class="butt" id="button8">
+                        </div>
+                    </div>
+                </div>
+                <div class="cards">
+                    <img src="Images/Catalog/Sushi/3.png" alt="sushi" class="img9">
+                    <div>
+                        <p>Роллы “Канада”</p>
+                        <img src="Images/Catalog/Information.png" onclick="window.aboutProduct.showModal()" class="info" id="info9">
+                    </div>
+                    <div>
+                        <div class="left">
+                            <p id="price9">11.7р</p>
+                        </div>
+                        <div class="right" id="c9">
+                            <input type="button" value="В корзину" class="butt" id="button9">
+                        </div>
+                    </div>
+                </div>
+                <div class="cards">
+                    <img src="Images/Catalog/Rolls/1.png" alt="rolls" class="img10">
+                    <div>
+                        <p>Суши “Сяке” </p>
+                        <img src="Images/Catalog/Information.png" onclick="window.aboutProduct.showModal()" class="info" id="info10">
+                    </div>
+                    <div>
+                        <div class="left">
+                            <p id="price10">10.2р</p>
+                        </div>
+                        <div class="right" id="c10">
+                            <input type="button" value="В корзину" class="butt" id="button10">
+                        </div>
+                    </div>
+                </div>
+                <div class="cards">
+                    <img src="Images/Catalog/Rolls/2.png" alt="rolls" class="img11">
+                    <div>
+                        <p>Суши “Тамаго” </p>
+                        <img src="Images/Catalog/Information.png" onclick="window.aboutProduct.showModal()" class="info" id="info11">
+                    </div>
+                    <div>
+                        <div class="left">
+                            <p id="price11">10.9р</p>
+                        </div>
+                        <div class="right" id="c11">
+                            <input type="button" value="В корзину" class="butt" id="button11">
+                        </div>
+                    </div>
+                </div>
+                <div class="cards">
+                    <img src="Images/Catalog/Rolls/3.png" alt="rolls" class="img12">
+                    <div>
+                        <p>Суши “Унаги” </p>
+                        <img src="Images/Catalog/Information.png" onclick="window.aboutProduct.showModal()" class="info" id="info12">
+                    </div>
+                    <div>
+                        <div class="left">
+                            <p id="price12">11.5р</p>
+                        </div>
+                        <div class="right" id="c12">
+                            <input type="button" value="В корзину" class="butt" id="button12">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section_one">
+        <div>
+            <p class="dishes_text">Десерты</p>
+        </div>
+        <div class="dishes">
+            <div class="sect">
+                <div class="cards">
+                    <img src="Images/Catalog/Desserts/1.png" alt="desserts" class="img13">
+                    <div>
+                        <p>Чизкейк из матчи</p>
+                        <img src="Images/Catalog/Information.png" onclick="window.aboutProduct.showModal()" class="info" id="info13">
+                    </div>
+                    <div>
+                        <div class="left">
+                            <p id="price13">5.6р</p>
+                        </div>
+                        <div class="right" id="c13">
+                            <input type="button" value="В корзину" class="butt" id="button13">
+                        </div>
+                    </div>
+                </div>
+                <div class="cards">
+                    <img src="Images/Catalog/Desserts/2.png" alt="deserts" class="img14">
+                    <div>
+                        <p>Моти с манго</p>
+                        <img src="Images/Catalog/Information.png" onclick="window.aboutProduct.showModal()" class="info" id="info14">
+                    </div>
+                    <div>
+                        <div class="left">
+                            <p id="price14">4.6р</p>
+                        </div>
+                        <div class="right" id="c14">
+                            <input type="button" value="В корзину" class="butt" id="button14">
+                        </div>
+                    </div>
+                </div>
+                <div class="cards">
+                    <img src="Images/Catalog/Desserts/3.png" alt="deserts" class="img15">
+                    <div>
+                        <p>Моти из матчи</p>
+                        <img src="Images/Catalog/Information.png" onclick="window.aboutProduct.showModal()" class="info" id="info15">
+                    </div>
+                    <div>
+                        <div class="left">
+                            <p id="price15">4.5р</p>
+                        </div>
+                        <div class="right" id="c15">
+                            <input type="button" value="В корзину" class="butt" id="button15">
+                        </div>
+                    </div>
+                </div>
+                <div class="cards">
+                    <img src="Images/Catalog/Desserts/4.png" alt="deserts" class="img16">
+                    <div>
+                        <p>Мороженое из матчи</p>
+                        <img src="Images/Catalog/Information.png" onclick="window.aboutProduct.showModal()" class="info" id="info16">
+                    </div>
+                    <div>
+                        <div class="left">
+                            <p id="price16">5.4р</p>
+                        </div>
+                        <div class="right" id="c16">
+                            <input type="button" value="В корзину" class="butt" id="button16">
+                        </div>
+                    </div>
+                </div>
+                <div class="cards">
+                    <img src="Images/Catalog/Desserts/5.png" alt="deserts" class="img17">
+                    <div>
+                        <p>Запеченный ролл</p>
+                        <img src="Images/Catalog/Information.png" onclick="window.aboutProduct.showModal()" class="info" id="info17">
+                    </div>
+                    <div>
+                        <div class="left">
+                            <p id="price17">8.3р</p>
+                        </div>
+                        <div class="right" id="c17">
+                            <input type="button" value="В корзину" class="butt" id="button17">
+                        </div>
+                    </div>
+                </div>
+                <div class="cards">
+                    <img src="Images/Catalog/Desserts/6.png" alt="deserts" class="img18">
+                    <div>
+                        <p>Панакота</p>
+                        <img src="Images/Catalog/Information.png" onclick="window.aboutProduct.showModal()" class="info" id="info18">
+                    </div>
+                    <div>
+                        <div class="left">
+                            <p id="price18">6.5р</p>
+                        </div>
+                        <div class="right" id="c18">
+                            <input type="button" value="В корзину" class="butt" id="button18">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section_two">
+        <div>
+            <p class="dishes_text">Онигири <sup>новое</sup></p>
+        </div>
+        <div class="dishes">
+            <div class="sect">
+                <div class="cards">
+                    <img src="Images/Catalog/Onigiri/1.png" alt="onigiri" class="img19">
+                    <div>
+                        <p>Онигири с креветками</p>
+                        <img src="Images/Catalog/Information.png" onclick="window.aboutProduct.showModal()" class="info" id="info19">
+                    </div>
+                    <div>
+                        <div class="left">
+                            <p id="price19">5.4р</p>
+                        </div>
+                        <div class="right" id="c19">
+                            <input type="button" value="В корзину" class="butt" id="button19">
+                        </div>
+                    </div>
+                </div>
+                <div class="cards">
+                    <img src="Images/Catalog/Onigiri/2.png" alt="onigiri" class="img20">
+                    <div>
+                        <p>Онигири с лососем</p>
+                        <img src="Images/Catalog/Information.png" onclick="window.aboutProduct.showModal()" class="info" id="info20">
+                    </div>
+                    <div>
+                        <div class="left">
+                            <p id="price20">5.8р</p>
+                        </div>
+                        <div class="right" id="c20">
+                            <input type="button" value="В корзину" class="butt" id="button20">
+                        </div>
+                    </div>
+                </div>
+                <div class="cards">
+                    <img src="Images/Catalog/Onigiri/3.png" alt="onigiri" class="img21">
+                    <div>
+                        <p>Онигири с овощами</p>
+                        <img src="Images/Catalog/Information.png" onclick="window.aboutProduct.showModal()" class="info" id="info21">
+                    </div>
+                    <div>
+                        <div class="left">
+                            <p id="price21">5.5р</p>
+                        </div>
+                        <div class="right" id="c21">
+                            <input type="button" value="В корзину" class="butt" id="button21">
+                        </div>
+                    </div>
+                </div>
+                <div class="cards">
+                    <img src="Images/Catalog/Onigiri/4.png" alt="onigiri" class="img22">
+                    <div>
+                        <p>Онигири с икрой</p>
+                        <img src="Images/Catalog/Information.png" onclick="window.aboutProduct.showModal()" class="info" id="info22">
+                    </div>
+                    <div>
+                        <div class="left">
+                            <p id="price22">6.3р</p>
+                        </div>
+                        <div class="right" id="c22">
+                            <input type="button" value="В корзину" class="butt" id="button22">
+                        </div>
+                    </div>
+                </div>
+                <div class="cards">
+                    <img src="Images/Catalog/Onigiri/5.jpg" alt="onigiri" class="img23">
+                    <div>
+                        <p>Онигири с курицей</p>
+                        <img src="Images/Catalog/Information.png" onclick="window.aboutProduct.showModal()" class="info" id="info23">
+                    </div>
+                    <div>
+                        <div class="left">
+                            <p id="price23">6.2р</p>
+                        </div>
+                        <div class="right" id="c23">
+                            <input type="button" value="В корзину" class="butt" id="button23">
+                        </div>
+                    </div>
+                </div>
+                <div class="cards">
+                    <img src="Images/Catalog/Onigiri/6.jpg" alt="onigiri" class="img24">
+                    <div>
+                        <p>Онигири с форелью</p>
+                        <img src="Images/Catalog/Information.png" onclick="window.aboutProduct.showModal()" class="info" id="info24">
+                    </div>
+                    <div>
+                        <div class="left">
+                            <p id="price24">6.8р</p>
+                        </div>
+                        <div class="right" id="c24">
+                            <input type="button" value="В корзину" class="butt" id="button24">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section_one">
+        <div>
+            <p class="dishes_text">Напитки</p>
+        </div>
+        <div class="dishes">
+            <div class="sect">
+                <div class="cards">
+                    <img src="Images/Catalog/Waters/1.png" alt="onigiri" class="img25">
+                    <div>
+                        <p>Вода</p>
+                    </div>
+                    <div>
+                        <div class="left">
+                            <p id="price25">2.9р</p>
+                        </div>
+                        <div class="right" id="c25">
+                            <input type="button" value="В корзину" class="butt" id="button25">
+                        </div>
+                    </div>
+                </div>
+                <div class="cards">
+                    <img src="Images/Catalog/Waters/2.png" alt="onigiri" class="img26">
+                    <div>
+                        <p>Газированная вода</p>
+                    </div>
+                    <div>
+                        <div class="left">
+                            <p id="price26">2.9р</p>
+                        </div>
+                        <div class="right" id="c26">
+                            <input type="button" value="В корзину" class="butt" id="button26">
+                        </div>
+                    </div>
+                </div>
+                <div class="cards">
+                    <img src="Images/Catalog/Waters/3.png" alt="onigiri" class="img27">
+                    <div>
+                        <p>Coca-Cola</p>
+                    </div>
+                    <div>
+                        <div class="left">
+                            <p id="price27">3.5р</p>
+                        </div>
+                        <div class="right" id="c27">
+                            <input type="button" value="В корзину" class="butt" id="button27">
+                        </div>
+                    </div>
+                </div>
+                <div class="cards">
+                    <img src="Images/Catalog/Waters/4.png" alt="onigiri" class="img28">
+                    <div>
+                        <p>Fanta</p>
+                    </div>
+                    <div>
+                        <div class="left">
+                            <p id="price28">3.5р</p>
+                        </div>
+                        <div class="right" id="c28">
+                            <input type="button" value="В корзину" class="butt" id="button28">
+                        </div>
+                    </div>
+                </div>
+                <div class="cards">
+                    <img src="Images/Catalog/Waters/5.png" alt="onigiri" class="img29">
+                    <div>
+                        <p>Sprite</p>
+                    </div>
+                    <div>
+                        <div class="left">
+                            <p id="price29">3.5р</p>
+                        </div>
+                        <div class="right" id="c29">
+                            <input type="button" value="В корзину" class="butt" id="button29">
+                        </div>
+                    </div>
+                </div>
+                <div class="cards">
+                    <img src="Images/Catalog/Waters/6.png" alt="onigiri" class="img30">
+                    <div>
+                        <p>Чай Lipton</p>
+                    </div>
+                    <div>
+                        <div class="left">
+                            <p id="price30">3.2р</p>
+                        </div>
+                        <div class="right" id="c30">
+                            <input type="button" value="В корзину" class="butt" id="button30">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="podval">
+            <div class="footer_left">
+                <p>Японская кухня</p>
+            </div>
+            <div class="footer_right">
+                <p>Телефон: +123 45 678 90 12</p>
+            </div>
+        </div>
+    </footer>
+    <script src="login.js"></script>
+    <script src="listOfProducts.js"></script>
+    <script src="toTheBasket.js"></script>
+</body>
+
+</html>

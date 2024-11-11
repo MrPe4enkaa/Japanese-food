@@ -1,0 +1,118 @@
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Корзина</title>
+    <link rel="stylesheet" href="basket.css">
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="slider.css">
+    <link rel="stylesheet" href="fonts.css">
+    <link rel="stylesheet" href="lists.css">
+    <link rel="shortcut icon" href="Images/Logotip.png" />
+    <link rel="stylesheet" href="login.css">
+</head>
+
+<body>
+    <dialog id="Okno">
+        <div class="dialog">
+            <p class="heading">Авторизация</p>
+            <p class="text">Имя</p>
+            <input type="text" id="name">
+            <p class="text">Телефон</p>
+            <input type="tel" id="phone" maxlength="13">
+            <p class="text">Адрес</p>
+            <input type="text" id="address">
+            <button class="log" id="log_in">Авторизоваться</button>
+            <button class="exit" id="exit" onclick="window.Okno.close()">Закрыть</button>
+        </div>
+    </dialog>
+
+    <dialog id="Login">
+        <div class="dialog2">
+            <p class="heading">Ваши данные</p>
+            <p class="text">Имя</p>
+            <input type="text" id="user_name" disabled>
+            <p class="text">Телефон</p>
+            <input type="tel" id="user_phone" disabled>
+            <p class="text">Адрес</p>
+            <input type="text" id="user_address" disabled>
+            <button class="log" id="unlog">Выйти из аккаунта</button>
+            <button class="exit" onclick="window.Login.close()">Закрыть</button>
+        </div>
+    </dialog>
+
+    <dialog id="LoginTrue">
+        <div class="true">
+            <p id="totals" class="total">Итоговая цена: </p>
+            <input type="button" value="Оформить заказ" id="Oformit" class="oformit">
+            <input type="button" value="Закрыть" class="exit" onclick="window.LoginTrue.close()">
+            <p>*Проверьте заказ на наличие ошибок</p>
+        </div>
+    </dialog>
+
+    <dialog id="notLogin">
+        <div class="false">
+            <p>Авторизуйтесь на сайте, чтобы оформить заказ</p>
+            <input type="button" value="Закрыть" onclick="window.notLogin.close()">
+        </div>
+    </dialog>
+
+    <dialog id="ZakazOformlen">
+        <div class="ZakazOformlen">
+            <p>Заказ оформлен</p>
+            <p id="random">Номер вашего заказа: </p>
+            <input type="button" value="Закрыть" class="exit" id="exitButton">
+        </div>
+    </dialog>
+
+    <header>
+        <div class="shapka">
+            <div class="header_left">
+                <p>Японская кухня</p>
+            </div>
+            <div class="header_right" id="head_right">
+                <a href="basket.html"><img src="Images/Header/bag.png" alt="bag_png"></a>
+                <button id="open" onclick="window.Okno.showModal()"><img src="Images/Header/avatar.png" alt="bag_png"></button>
+            </div>
+        </div>
+    </header>
+
+    <section class="lists">
+        <a href="index.html">Главная</a>
+        <a href="catalog.html">Каталог</a>
+        <a href="contacts.html">Контакты</a>
+    </section>
+
+    <section class="section_one">
+        <div class="basket">
+            <p>Корзина</p>
+        </div>
+        <div class="bask" id="basket">
+            <div class="basc" id="basc">
+                <div class="none" id="destroy">
+                    <p id="noneP">Ваша корзина пуста</p>
+                </div>
+                <div class="basket_products" id="products_in_bag">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="podval">
+            <div class="footer_left">
+                <p>Японская кухня</p>
+            </div>
+            <div class="footer_right">
+                <p>Телефон: +123 45 678 90 12</p>
+            </div>
+        </div>
+    </footer>
+    <script src="listOfProducts.js"></script>
+    <script src="inTheBasket.js"></script>
+    <script src="login.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,156 @@
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Главная</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="slider.css">
+    <link rel="stylesheet" href="fonts.css">
+    <link rel="stylesheet" href="lists.css">
+    <link rel="stylesheet" href="login.css">
+    <link rel="shortcut icon" href="Images/Logotip.png">
+</head>
+
+<body>
+    <header>
+        <div class="shapka">
+            <div class="header_left">
+                <p>Японская кухня</p>
+            </div>
+            <div class="header_right" id="head_right">
+                <a href="basket.html"><img src="Images/Header/bag.png" alt="bag_png"></a>
+                <button id="open" onclick="window.Okno.showModal()"><img src="Images/Header/avatar.png" alt="bag_png"></button>
+            </div>
+        </div>
+    </header>
+
+    <dialog id="Okno">
+        <div class="dialog">
+            <p class="heading">Авторизация</p>
+            <p class="text">Имя</p>
+            <input type="text" id="name">
+            <p class="text">Телефон</p>
+            <input type="tel" id="phone" maxlength="13">
+            <p class="text">Адрес</p>
+            <input type="text" id="address">
+            <button class="log" id="log_in">Авторизоваться</button>
+            <button class="exit" id="exit" onclick="window.Okno.close()">Закрыть</button>
+        </div>
+    </dialog>
+
+    <dialog id="Login">
+        <div class="dialog2">
+            <p class="heading">Ваши данные</p>
+            <p class="text">Имя</p>
+            <input type="text" id="user_name" disabled>
+            <p class="text">Телефон</p>
+            <input type="tel" id="user_phone" disabled>
+            <p class="text">Адрес</p>
+            <input type="text" id="user_address" disabled>
+            <button class="log" id="unlog">Выйти из аккаунта</button>
+            <button class="exit" onclick="window.Login.close()">Закрыть</button>
+        </div>
+    </dialog>
+
+    <section class="lists">
+        <a href="index.html">Главная</a>
+        <a href="catalog.html">Каталог</a>
+        <a href="contacts.html">Контакты</a>
+    </section>
+
+    <section class="section_one">
+        <div class="div_background">
+            <p>Онигири - новое блюдо <br> в нашем ресторане</p>
+        </div>
+    </section>
+
+    <section class="section_two">
+        <div class="why_we">
+            <p>Почему выбирают нас?</p>
+        </div>
+        <div class="quality">
+            <div class="fresh_food">
+                <img src="Images/Main/fresh food.png" alt="fresh_food">
+                <p class="h">Свежие продукты</p>
+                <p class="description">Мы покупаем у проверенных <br> магазинов продукты с высоким <br> качеством </p>
+            </div>
+            <div class="the_best_chefs">
+                <img src="Images/Main/the best chefs.png" alt="the_best_chefs">
+                <p class="h">Лучшие повара</p>
+                <p class="description">Наши повара знатоки <br> своего дела</p>
+            </div>
+            <div class="fast_shipping">
+                <img src="Images/Main/fast shipping.png" alt="fast_shipping">
+                <p class="h">Быстрая доставка</p>
+                <p class="description">Быстро доставим ваш заказ</p>
+            </div>
+            <div class="time">
+                <img src="Images/Main/time.png" alt="fast_shipping">
+                <p class="h">Время ожидания</p>
+                <p class="description">Ждать заказ придется <br>всего 30 минут</p>
+            </div>
+            <div class="free">
+                <img src="Images/Main/free.png" alt="fast_shipping">
+                <p class="h">Доставка бесплатна</p>
+                <p class="description">Доставка бесплатна по всему <br> городу и пригороду</p>
+            </div>
+            <div class="money">
+                <img src="Images/Main/money.png" alt="fast_shipping">
+                <p class="h">Низкие цены</p>
+                <p class="description">Низкие цены на все <br> товары из ассортимента</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="section_three">
+        <div class="the_best_dishes">
+            <p>Наши лучшие блюда</p>
+        </div>
+        <div class="menu">
+            <div class="div">
+                <div class="udon">
+                    <img src="Images/Catalog/Udon/2.png" alt="Удон">
+                    <p>Удон с курицей</p>
+                </div>
+                <div class="rolls">
+                    <img src="Images/Catalog/Sushi/1.png" alt="Удон">
+                    <p>Роллы “Мидори”</p>
+                </div>
+                <div class="moti">
+                    <img src="Images/Catalog/Desserts/2.png" alt="Удон">
+                    <p>Моти манго-маракуйя</p>
+                </div>
+                <div class="panakota">
+                    <img src="Images/Catalog/Desserts/6.png" alt="Удон">
+                    <p>Панакота</p>
+                </div>
+                <div class="soba">
+                    <img src="Images/Catalog/Soba/3.png" alt="Соба">
+                    <p>Соба со свининой</p>
+                </div>
+                <div class="dango">
+                    <img src="Images/Catalog/Desserts/1.png" alt="Данго">
+                    <p>Чизкейк из матчи</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="podval">
+            <div class="footer_left">
+                <p>Японская кухня</p>
+            </div>
+            <div class="footer_right">
+                <p>Телефон: +123 45 678 90 12</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="login.js"></script>
+</body>
+
+</html>

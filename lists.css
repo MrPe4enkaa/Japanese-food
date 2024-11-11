@@ -1,0 +1,15 @@
+.lists{
+    margin: auto;
+    display: flex;
+    flex-shrink: 0;
+    justify-content: space-around;
+    background-color: DEA864;
+    a{
+        margin: 20px;
+        color: white;
+        font-size: 25px;
+        font-family: Inter-Regular;
+        padding: 8px;
+        text-decoration: none;
+    } 
+}
