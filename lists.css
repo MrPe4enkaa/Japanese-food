@@ -57,6 +57,7 @@
         padding: 0;
         margin: 20px;
         padding: 8px;
+        transform: rotate(0deg);
     }
 }
 
@@ -68,18 +69,23 @@
         flex-direction: column;
         justify-content: start;
         align-items: flex-start;
-        background-color: DEA864;
         height: auto;
+    }
+    .static {
+        z-index: 1;
     }
     .toggle {
         display: flex;
         flex-direction: column;
         align-items: flex-start;
         justify-content: center;
+        opacity: 0;
+        z-index: 0;
     }
     .list {
         display: flex;
         justify-content: flex-start;
+        background-color: DEA864;
         height: 85px;
         width: 100%;
         a {

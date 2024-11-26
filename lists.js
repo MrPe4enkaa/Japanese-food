@@ -1,6 +1,32 @@
-$(document).ready(() => {
-    $('.toggle').hide(0);
-    $('#toggle').on('click', () => {
-        $('.toggle').toggle(400);
+document.addEventListener('DOMContentLoaded', () => {
+    let count = 1;
+
+    let button = document.getElementById('toggle');
+    let list = document.querySelector('.toggle');
+    $(list).hide(0);
+    $(button).on('click', () => {
+        $(list).slideToggle(400);
+        count++;
+        gsap.to(button, {
+            rotation: '+=90',
+            duration: 0.4
+        });
+        if (count % 2 === 0) {
+            gsap.fromTo(list, {
+                y: -90,
+                opacity: 0
+            }, {
+                y: 0,
+                opacity: 1,
+                duration: 0.4
+
+            });
+        } else {
+            gsap.to(list, {
+                y: -30,
+                opacity: 0,
+                duration: 0.4,
+            })
+        }
     });
 });
