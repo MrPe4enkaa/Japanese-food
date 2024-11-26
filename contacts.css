@@ -1,14 +1,15 @@
-body{
+body {
     margin: 0%;
 }
 
-.section_one{
+.section_one {
     background-color: AAB54E;
     width: auto;
     height: auto;
     display: grid;
 }
-.contacts p{
+
+.contacts p {
     margin: 20px;
     padding-top: 20px;
     color: white;
@@ -16,27 +17,39 @@ body{
     font-family: Inter-Regular;
     text-align: center;
 }
-.cont{
+
+.cont {
     margin: auto;
     width: 85%;
     padding-bottom: 80px;
     padding-top: 5px;
 }
 
-.contact{
+.contact {
     display: flex;
     justify-content: space-around;
     align-items: center;
     padding-bottom: 15px;
-    flex-wrap: wrap;
 }
-.information{
+
+#iframe {
+    width: 50%;
+    height: 500px;
+    border: 0;
+    outline-style: none;
+    border: none !important;
+    border-radius: 30px;
+    margin: 20px;
+    overflow: hidden;
+}
+
+.information {
     display: flex;
     flex-direction: column;
-    padding-left: 70px;
     padding-top: 10px;
 }
-.location{
+
+.location {
     background-color: white;
     width: 320px;
     height: 80px;
@@ -45,14 +58,15 @@ body{
     justify-content: center;
     border-radius: 10px;
     margin: 20px;
-    p{
+    p {
         color: black;
         font-size: 20px;
         font-family: Inter-SemoBold;
         text-align: center;
     }
 }
-.phone{
+
+.phone {
     background-color: white;
     width: 320px;
     height: 55px;
@@ -61,14 +75,15 @@ body{
     justify-content: center;
     border-radius: 10px;
     margin: 20px;
-    p{
+    p {
         color: black;
         font-size: 20px;
         font-family: Inter-SemoBold;
         text-align: center;
     }
 }
-.time{
+
+.time {
     background-color: white;
     width: 320px;
     height: 100px;
@@ -77,26 +92,30 @@ body{
     justify-content: center;
     border-radius: 10px;
     margin: 20px;
-    p{
+    p {
         color: black;
         font-size: 20px;
         font-family: Inter-SemoBold;
         text-align: center;
     }
 }
-.section_two{
+
+.section_two {
     background: #DEA864;
     width: auto;
     height: auto;
     display: grid;
 }
 
-iframe{
-    width: 700px;
-    height: 511px;
-    outline-style: none;
-    border: none !important;
-    border-radius: 30px;
-    margin: 20px;
-    overflow: hidden;
+@media screen and (max-width: 850px) {
+    .contact {
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 15px;
+    }
+    #iframe {
+        width: 320px;
+    }
 }
