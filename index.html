@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="lists.css">
     <link rel="stylesheet" href="login.css">
     <link rel="shortcut icon" href="Images/Logotip.png">
+    <script src="jquery-3.7.1.min.js"></script>
 </head>
 
 <body>
@@ -56,9 +57,20 @@
     </dialog>
 
     <section class="lists">
-        <a href="index.html">Главная</a>
-        <a href="catalog.html">Каталог</a>
-        <a href="contacts.html">Контакты</a>
+        <div class="list">
+            <img src="Images/menu.png" alt="menu" id="toggle">
+        </div>
+        <div class="toggle">
+            <div class="list mainList">
+                <a href="index.html">Главная</a>
+            </div>
+            <div class="list catalogList">
+                <a href="catalog.html">Каталог</a>
+            </div>
+            <div class="list">
+                <a href="contacts.html">Контакты</a>
+            </div>
+        </div>
     </section>
 
     <section class="section_one">
@@ -149,7 +161,7 @@
             </div>
         </div>
     </footer>
-
+    <script src="lists.js"></script>
     <script src="login.js"></script>
 </body>
 
