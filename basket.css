@@ -1,21 +1,25 @@
-body{
+body {
     margin: 0%;
 }
-.section_one{
+
+.section_one {
     background-color: AAB54E;
     width: auto;
     height: auto;
     display: grid;
 }
-.basket p{
+
+.basket p {
     margin: 20px;
     padding-top: 20px;
+    padding-left: 32px;
     color: white;
     font-size: 38px;
     font-family: Inter-Regular;
     text-align: center;
 }
-.bask{
+
+.bask {
     margin: auto;
     width: 69%;
     padding-bottom: 80px;
@@ -25,40 +29,42 @@ body{
     justify-content: center;
     flex-direction: column;
 }
-.basc{
+
+.basc {
     display: flex;
     justify-content: space-around;
     align-items: center;
     padding-bottom: 15px;
     flex-wrap: wrap;
-    .none{
-        margin: 20px;
-        width: 1200px;
+    width: 100%;
+    .none {
+        width: 100%;
         height: 579px;
+        margin: 20px;
         flex-shrink: 0;
         border-radius: 15px;
         background: #FFF;
-
         display: flex;
         align-items: center;
         flex-wrap: wrap;
         justify-content: center;
-        p{
+        p {
             color: #000;
             font-size: 28px;
             font-family: Inter-SemoBold;
             text-align: center;
-            font-weight: 500px;
         }
     }
 }
-.basket_products{
+
+.basket_products {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
 }
-.cards{
+
+.cards {
     margin: 20px;
     width: 288px;
     height: 400px;
@@ -70,26 +76,23 @@ body{
     flex-wrap: wrap;
     justify-content: center;
     flex-direction: column;
-
-    p{
+    p {
         color: #000;
         font-size: 21px;
         font-family: Inter-SemoBold;
         text-align: center;
         font-weight: 470px;
     }
-
-    div{
+    div {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
         flex-shrink: 0;
-
-        .left{
+        .left {
             width: 30%;
             height: auto;
             justify-content: start;
-            p{
+            p {
                 color: #000;
                 font-size: 22px;
                 font-family: Inter-SemoBold;
@@ -97,7 +100,7 @@ body{
                 margin-bottom: 10px;
             }
         }
-        .right{
+        .right {
             width: auto;
             height: auto;
             justify-content: start;
@@ -105,7 +108,7 @@ body{
             margin-left: 7px;
             flex-wrap: nowrap;
             flex-direction: row;
-            .butt{
+            .butt {
                 width: 23px;
                 height: 23px;
                 border-radius: 8px;
@@ -118,10 +121,10 @@ body{
                 margin-left: 9px;
                 margin-right: 8px;
             }
-            .butt:active{
+            .butt:active {
                 background-color: #fd6565;
             }
-            p{
+            p {
                 color: #000;
                 font-size: 20px;
                 font-family: Inter-SemoBold;
@@ -134,7 +137,8 @@ body{
         }
     }
 }
-.total_div{
+
+.total_div {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
@@ -142,7 +146,8 @@ body{
     align-content: center;
     align-items: center;
 }
-.total_p{
+
+.total_p {
     margin: 20px;
     padding-top: 20px;
     color: white;
@@ -150,7 +155,8 @@ body{
     font-family: Inter-Regular;
     text-align: center;
 }
-.buttTotal{
+
+.buttTotal {
     width: 150px;
     height: 50px;
     border-radius: 10px;
@@ -162,7 +168,8 @@ body{
     margin: 20px;
     outline-style: none;
 }
-.buttClear{
+
+.buttClear {
     width: 160px;
     height: 50px;
     border-radius: 10px;
@@ -174,14 +181,16 @@ body{
     margin: 20px;
     outline-style: none;
 }
-.buttTotal:active{
-    background-color: rgb(214, 214, 214);
-}
-.buttClear:active{
+
+.buttTotal:active {
     background-color: rgb(214, 214, 214);
 }
 
-.true{
+.buttClear:active {
+    background-color: rgb(214, 214, 214);
+}
+
+.true {
     width: 320px;
     height: 240px;
     display: flex;
@@ -193,7 +202,7 @@ body{
     border: none;
     border-radius: 20px;
     background: #FF7B7B;
-    .total{
+    .total {
         margin: 10px;
         padding-top: 20px;
         color: white;
@@ -201,7 +210,7 @@ body{
         font-family: Inter-Regular;
         text-align: center;
     }
-    .oformit{
+    .oformit {
         width: 125px;
         height: 35px;
         border-radius: 8px;
@@ -213,7 +222,7 @@ body{
         outline-style: none;
         margin: 15px;
     }
-    .exit{
+    .exit {
         width: 80px;
         height: 35px;
         border-radius: 8px;
@@ -225,10 +234,10 @@ body{
         outline-style: none;
         margin-top: 10px;
     }
-    input:active{
+    input:active {
         background-color: rgb(214, 214, 214);
     }
-    p{
+    p {
         padding-top: 20px;
         color: white;
         font-size: 10.5px;
@@ -237,7 +246,8 @@ body{
         margin-bottom: 10px;
     }
 }
-.false{
+
+.false {
     width: 400px;
     height: 250px;
     display: flex;
@@ -249,7 +259,7 @@ body{
     border: none;
     border-radius: 20px;
     background: #FF7B7B;
-    input{
+    input {
         width: 80px;
         height: 35px;
         border-radius: 8px;
@@ -260,10 +270,10 @@ body{
         font-family: Inter-SemoBold;
         outline-style: none;
     }
-    input:active{
+    input:active {
         background-color: rgb(214, 214, 214);
     }
-    p{
+    p {
         margin: 20px;
         padding-top: 20px;
         color: white;
@@ -273,7 +283,8 @@ body{
         padding-bottom: 10px;
     }
 }
-.ZakazOformlen{
+
+.ZakazOformlen {
     width: 310px;
     height: 190px;
     display: flex;
@@ -285,7 +296,7 @@ body{
     border: none;
     border-radius: 20px;
     background: #AAB54E;
-    input{
+    input {
         width: 80px;
         height: 35px;
         border-radius: 8px;
@@ -296,10 +307,10 @@ body{
         font-family: Inter-SemoBold;
         outline-style: none;
     }
-    input:active{
+    input:active {
         background-color: rgb(214, 214, 214);
     }
-    p{
+    p {
         color: white;
         font-size: 20px;
         font-family: Inter-Regular;
@@ -308,160 +319,201 @@ body{
     }
 }
 
-.img1{
-    transform: scale(0.9);
-    padding-top: 10px;
-    width: 220px;
-}
-.img2{
-    transform: scale(0.9);
-    padding-top: 10px;
-    width: 220px;
-}
-.img3{
-    transform: scale(0.9);
-    padding-top: 10px;
-    width: 220px;
-}
-.img4{
-    transform: scale(0.9);
-    padding-top: 10px;
-    width: 220px;
-}
-.img5{
-    transform: scale(0.9);
-    padding-top: 10px;
-    width: 220px;
-}
-.img6{
+.img1 {
     transform: scale(0.9);
     padding-top: 10px;
     width: 220px;
 }
 
-
-.img7{
+.img2 {
+    transform: scale(0.9);
+    padding-top: 10px;
     width: 220px;
-    padding-bottom: 50px;
-    padding-top: 40px;
-}
-.img8{
-    width: 220px;
-    padding-bottom: 50px;
-    padding-top: 40px;
-}
-.img9{
-    width: 220px;
-    padding-bottom: 50px;
-    padding-top: 40px;
 }
 
-.img10{
+.img3 {
+    transform: scale(0.9);
+    padding-top: 10px;
+    width: 220px;
+}
+
+.img4 {
+    transform: scale(0.9);
+    padding-top: 10px;
+    width: 220px;
+}
+
+.img5 {
+    transform: scale(0.9);
+    padding-top: 10px;
+    width: 220px;
+}
+
+.img6 {
+    transform: scale(0.9);
+    padding-top: 10px;
+    width: 220px;
+}
+
+.img7 {
     width: 220px;
     padding-bottom: 50px;
     padding-top: 40px;
 }
-.img11{
+
+.img8 {
+    width: 220px;
+    padding-bottom: 50px;
+    padding-top: 40px;
+}
+
+.img9 {
+    width: 220px;
+    padding-bottom: 50px;
+    padding-top: 40px;
+}
+
+.img10 {
+    width: 220px;
+    padding-bottom: 50px;
+    padding-top: 40px;
+}
+
+.img11 {
     width: 200px;
     padding-bottom: 30px;
     padding-top: 40px;
 }
-.img12{
+
+.img12 {
     width: 220px;
     padding-bottom: 50px;
     padding-top: 40px;
 }
 
-.img13{
+.img13 {
     width: 250px;
     padding-bottom: 30px;
     padding-top: 40px;
 }
-.img14{
+
+.img14 {
     width: 220px;
     padding-bottom: 50px;
     padding-top: 40px;
 }
-.img15{
+
+.img15 {
     width: 230px;
     padding-bottom: 50px;
     padding-top: 40px;
 }
 
-.img16{
+.img16 {
     width: 170px;
     padding-bottom: 50px;
     padding-top: 40px;
 }
-.img17{
+
+.img17 {
     width: 130px;
     padding-bottom: 20px;
     padding-top: 40px;
 }
-.img18{
+
+.img18 {
     width: 160px;
     padding-bottom: 40px;
     padding-top: 40px;
 }
 
-.img19{
-    width: 180px;
-    padding-bottom: 20px;
-    padding-top: 40px;
-}
-.img20{
-    width: 180px;
-    padding-bottom: 20px;
-    padding-top: 40px;
-}
-.img21{
-    width: 180px;
-    padding-bottom: 20px;
-    padding-top: 40px;
-}
-.img22{
-    width: 160px;
-    padding-bottom: 10px;
-    padding-top: 40px;
-}
-.img23{
-    width: 180px;
-    padding-bottom: 20px;
-    padding-top: 40px;
-}
-.img24{
+.img19 {
     width: 180px;
     padding-bottom: 20px;
     padding-top: 40px;
 }
 
-.img25{
+.img20 {
+    width: 180px;
+    padding-bottom: 20px;
+    padding-top: 40px;
+}
+
+.img21 {
+    width: 180px;
+    padding-bottom: 20px;
+    padding-top: 40px;
+}
+
+.img22 {
+    width: 160px;
+    padding-bottom: 10px;
+    padding-top: 40px;
+}
+
+.img23 {
+    width: 180px;
+    padding-bottom: 20px;
+    padding-top: 40px;
+}
+
+.img24 {
+    width: 180px;
+    padding-bottom: 20px;
+    padding-top: 40px;
+}
+
+.img25 {
     width: 50px;
     padding-bottom: 20px;
     padding-top: 40px;
 }
-.img26{
+
+.img26 {
     width: 50px;
     padding-bottom: 30px;
     padding-top: 40px;
 }
-.img27{
+
+.img27 {
     width: 50px;
     padding-bottom: 20px;
     padding-top: 40px;
 }
-.img28{
+
+.img28 {
     width: 50px;
     padding-bottom: 20px;
     padding-top: 40px;
 }
-.img29{
+
+.img29 {
     width: 50px;
     padding-bottom: 20px;
     padding-top: 40px;
 }
-.img30{
+
+.img30 {
     width: 50px;
     padding-bottom: 20px;
     padding-top: 40px;
 }
+
+
+/* @media screen and (min-width: 320px) and (max-width: 480px) {
+    .none {
+        width: 320px;
+        height: 530px;
+        margin: 20px;
+        flex-shrink: 0;
+        border-radius: 15px;
+        background: #FFF;
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: center;
+        p {
+            font-size: 24px;
+        }
+    }
+} */
