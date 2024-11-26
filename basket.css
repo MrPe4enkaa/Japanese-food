@@ -504,12 +504,11 @@ body {
     padding-top: 40px;
 }
 
-
-/* @media screen and (min-width: 320px) and (max-width: 480px) {
-    .none {
-        width: 320px;
-        height: 530px;
+@media screen and (min-width:320px) {
+    .cards {
         margin: 20px;
+        width: 288px;
+        height: 400px;
         flex-shrink: 0;
         border-radius: 15px;
         background: #FFF;
@@ -517,8 +516,37 @@ body {
         align-items: center;
         flex-wrap: wrap;
         justify-content: center;
+        flex-direction: column;
         p {
-            font-size: 24px;
+            color: #000;
+            font-size: 21px;
+            font-family: Inter-SemoBold;
+            text-align: center;
+            font-weight: 470px;
+        }
+        div {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            flex-shrink: 0;
+            .right {
+                .butt {
+                    width: 23px;
+                    height: 23px;
+                    border-radius: 8px;
+                    background-color: #FF7B7B;
+                    border: none;
+                    color: white;
+                    font-size: 15px;
+                    font-family: Inter-Regular;
+                    margin-top: 23px;
+                    margin-left: 9px;
+                    margin-right: 8px;
+                }
+                .butt:active {
+                    background-color: #fd6565;
+                }
+            }
         }
     }
-} */
+}
