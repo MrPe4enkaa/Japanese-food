@@ -24,7 +24,7 @@ document.addEventListener('DOMContentLoaded', () => {
             });
         } else {
             gsap.to(list, {
-                y: -40,
+                y: -10,
                 opacity: 0,
                 duration: 0.5,
             })
