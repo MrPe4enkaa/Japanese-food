@@ -30,7 +30,7 @@
 }
 
 .toggle {
-    display: flex;
+    display: none;
     flex-direction: row;
     align-items: flex-start;
     justify-content: space-around;
@@ -100,10 +100,10 @@
         }
     }
     .catalogList {
-        border-bottom: 0.5px rgb(116, 116, 116) solid;
-        border-top: 0.5px rgb(116, 116, 116) solid;
+        border-bottom: 0.5px white solid;
+        border-top: 0.5px white solid;
     }
     .mainList {
-        border-top: 0.5px rgb(116, 116, 116) solid;
+        border-top: 0.5px white solid;
     }
 }
