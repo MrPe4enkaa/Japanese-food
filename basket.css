@@ -146,7 +146,6 @@ body {
 
 .total_div {
     display: flex;
-    flex-wrap: wrap;
     flex-direction: column;
     justify-content: center;
     align-content: center;
@@ -160,6 +159,13 @@ body {
     font-size: 30px;
     font-family: Inter-Regular;
     text-align: center;
+}
+
+.div_buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
 .buttTotal {

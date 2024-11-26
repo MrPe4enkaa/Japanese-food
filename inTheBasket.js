@@ -1,14 +1,12 @@
 //получение количества продуктов 
 let countProducts = localStorage.getItem('countProducts');
 
-if(countProducts == null || countProducts == 'null' || countProducts < 0)
-{
+if (countProducts == null || countProducts == 'null' || countProducts < 0) {
     countProducts = 0;
     localStorage.setItem('countProducts', countProducts);
 }
 
-if(countProducts >= 1)
-{
+if (countProducts >= 1) {
     //создание кнопок очистки корзины и оформление
     let block_products = document.getElementById('products_in_bag');
 
@@ -22,10 +20,12 @@ if(countProducts >= 1)
     let total_price_div = document.createElement('div');
     let butt_div = document.createElement('div');
     let total_price_text = document.createElement('p');
-        
+
+    butt_div.className = 'div_buttons';
+
     total_price_div.className = 'total_div';
     total_price_text.className = 'total_p';
-        
+
     total_price_div.appendChild(total_price_text);
     total_price_div.appendChild(butt_div);
     basket.appendChild(total_price_div);
@@ -36,27 +36,23 @@ if(countProducts >= 1)
 
     let MaxTovar = Number;
     MaxTovar = 20;
-    
+
     let summa = 0;
 
-    for(let i = 0; i <= 30; i++)
-    {
+    for (let i = 0; i <= 30; i++) {
         //получение товара из localStorage
         let product = localStorage.getItem('product' + i.toString());
-        
-        if(product)
-        {   
+
+        if (product) {
             //добавление карточки товара в корзину
             let count = localStorage.getItem('countPrice' + i.toString());
             let prices = localStorage.getItem('priceProduct' + i.toString());
 
-            if(count == null || count == 0 || count == 'null')
-            {
+            if (count == null || count == 0 || count == 'null') {
                 count = 1;
                 localStorage.setItem('countPrice' + i.toString(), count);
             }
-            if(prices == null || prices == 0 || prices == 'null' || prices == 1)
-            {
+            if (prices == null || prices == 0 || prices == 'null' || prices == 1) {
                 prices = (all_products[i].price * count).toFixed(1);
                 localStorage.setItem('priceProduct' + i.toString(), prices);
             }
@@ -73,18 +69,18 @@ if(countProducts >= 1)
             divLeft.classList.add('left');
             divRight = document.createElement('div');
             divRight.classList.add('right');
-    
+
             divLeft.innerHTML += '<p id="price' + i.toString() + '">' + prices + 'p' + '</p>';
 
             divRight.innerHTML += '<input type="button" value="-" class="butt" id="' + 'buttonMinus' + i.toString() + '">';
-            divRight.innerHTML += '<p class ="count" id="' + 'count' + i.toString() + '">' + count.toString() +'</p>';
+            divRight.innerHTML += '<p class ="count" id="' + 'count' + i.toString() + '">' + count.toString() + '</p>';
             divRight.innerHTML += '<input type="button" value="+" class="butt" id="' + 'buttonPlus' + i.toString() + '">';
 
             div.appendChild(divLeft);
             div.appendChild(divRight);
-    
+
             new_card.appendChild(div);
-    
+
             block_products.appendChild(new_card);
 
             summa = summa + (+all_products[i].price) * (+count);
@@ -94,7 +90,7 @@ if(countProducts >= 1)
             let idPlus = 'buttonPlus' + i.toString();
             let idCount = 'count' + i.toString();
             let idPrice = 'price' + i.toString();
-    
+
             let buttonM = document.getElementById(idMinus);
             let buttonP = document.getElementById(idPlus);
             let countText = document.getElementById(idCount);
@@ -105,8 +101,7 @@ if(countProducts >= 1)
             buttonM.addEventListener('click', minusProduct);
             buttonP.addEventListener('click', plusProduct);
 
-            function minusProduct()
-            {
+            function minusProduct() {
                 count--;
                 countText.innerHTML = count;
                 prices = ((+all_products[i].price) * (+count)).toFixed(1);
@@ -119,8 +114,7 @@ if(countProducts >= 1)
                 localStorage.setItem('countPrice' + i.toString(), count);
                 localStorage.setItem('priceProduct' + i.toString(), prices);
 
-                if(count <= 0)
-                {
+                if (count <= 0) {
                     countProducts--;
                     localStorage.setItem('countProducts', countProducts);
 
@@ -128,16 +122,14 @@ if(countProducts >= 1)
                     localStorage.removeItem('countPrice' + i.toString());
                     localStorage.removeItem('priceProduct' + i.toString());
                     localStorage.removeItem('Total');
-                    
+
                     location.reload();
                 }
             }
-            
 
-            function plusProduct()
-            {
-                if(count < MaxTovar)
-                {
+
+            function plusProduct() {
+                if (count < MaxTovar) {
                     count++;
                     countText.innerHTML = count;
                     prices = ((+all_products[i].price) * (+count)).toFixed(1);
@@ -157,13 +149,12 @@ if(countProducts >= 1)
 
             button_Clear.addEventListener('click', ClearBasket);
 
-            function ClearBasket()
-            {
+            function ClearBasket() {
                 localStorage.removeItem('product' + i.toString());
                 localStorage.removeItem('countPrice' + i.toString());
                 localStorage.removeItem('priceProduct' + i.toString());
                 localStorage.removeItem('Total');
-    
+
                 countProducts = 0;
                 localStorage.setItem('countProducts', countProducts);
                 location.reload();
@@ -174,13 +165,13 @@ if(countProducts >= 1)
             let phone_user = localStorage.getItem('user_phone');
             let address_user = localStorage.getItem('user_address');
 
-            if (name_user == null || name_user <= 0 || name_user == 'null'){
+            if (name_user == null || name_user <= 0 || name_user == 'null') {
                 name_user = 0;
             }
-            if (phone_user == null || phone_user <= 0 || phone_user == 'null'){
+            if (phone_user == null || phone_user <= 0 || phone_user == 'null') {
                 phone_user = 0;
             }
-            if (address_user == null || address_user <= 0 || address_user == 'null'){
+            if (address_user == null || address_user <= 0 || address_user == 'null') {
                 address_user = 0;
             }
 
@@ -190,13 +181,10 @@ if(countProducts >= 1)
 
             button_Total.addEventListener('click', Total);
 
-            function Total()
-            {
-                if(name_user == 0 || phone_user == 0 || address_user == 0)
-                {
+            function Total() {
+                if (name_user == 0 || phone_user == 0 || address_user == 0) {
                     window.notLogin.showModal()
-                }
-                else{
+                } else {
                     window.LoginTrue.showModal()
                 }
             }
@@ -208,25 +196,23 @@ if(countProducts >= 1)
 
             button_oformlen.addEventListener('click', Oformlen);
 
-            function Oformlen()
-            {
+            function Oformlen() {
                 window.LoginTrue.close();
                 random_p.innerHTML = 'Номер вашего заказа: ' + random_number.toFixed(0);
 
                 window.ZakazOformlen.showModal()
             }
-            
+
             //кнопка для выхода из диалога оформления
             let button_exit_oformlen = document.getElementById('exitButton');
 
             button_exit_oformlen.addEventListener('click', Ogidanie);
 
-            function Ogidanie()
-            {
+            function Ogidanie() {
                 localStorage.removeItem('product' + i.toString());
                 localStorage.removeItem('countPrice' + i.toString());
                 localStorage.removeItem('priceProduct' + i.toString());
-    
+
                 countProducts = 0;
                 localStorage.setItem('countProducts', countProducts);
                 location.reload();
