@@ -114,8 +114,8 @@ body {
             flex-wrap: nowrap;
             flex-direction: row;
             .butt {
-                width: 23px;
-                height: 23px;
+                width: 22px;
+                height: 22px;
                 border-radius: 8px;
                 background-color: #FF7B7B;
                 border: none;
@@ -123,8 +123,9 @@ body {
                 font-size: 15px;
                 font-family: Inter-Regular;
                 margin-top: 23px;
-                margin-left: 9px;
+                margin-left: 8px;
                 margin-right: 8px;
+                padding: 0;
             }
             .butt:active {
                 background-color: #fd6565;
@@ -502,51 +503,4 @@ body {
     width: 50px;
     padding-bottom: 20px;
     padding-top: 40px;
-}
-
-@media screen and (min-width:320px) {
-    .cards {
-        margin: 20px;
-        width: 288px;
-        height: 400px;
-        flex-shrink: 0;
-        border-radius: 15px;
-        background: #FFF;
-        display: flex;
-        align-items: center;
-        flex-wrap: wrap;
-        justify-content: center;
-        flex-direction: column;
-        p {
-            color: #000;
-            font-size: 21px;
-            font-family: Inter-SemoBold;
-            text-align: center;
-            font-weight: 470px;
-        }
-        div {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            flex-shrink: 0;
-            .right {
-                .butt {
-                    width: 23px;
-                    height: 23px;
-                    border-radius: 8px;
-                    background-color: #FF7B7B;
-                    border: none;
-                    color: white;
-                    font-size: 15px;
-                    font-family: Inter-Regular;
-                    margin-top: 23px;
-                    margin-left: 9px;
-                    margin-right: 8px;
-                }
-                .butt:active {
-                    background-color: #fd6565;
-                }
-            }
-        }
-    }
 }
