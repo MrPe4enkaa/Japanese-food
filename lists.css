@@ -100,10 +100,10 @@
         }
     }
     .catalogList {
-        border-bottom: 0.5px white solid;
-        border-top: 0.5px white solid;
+        border-bottom: 1px white solid;
+        border-top: 1px white solid;
     }
     .mainList {
-        border-top: 0.5px white solid;
+        border-top: 1px white solid;
     }
 }
