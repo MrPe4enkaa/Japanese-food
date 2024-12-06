@@ -245,13 +245,12 @@ body {
     }
 }
 
-@media screen and (min-width:1920px) {
+@media screen and (min-width:1900px) {
     .div,
     .quality {
         display: grid;
         grid-template-columns: repeat(3, 290px);
         justify-content: space-around;
-        padding-bottom: 15px;
         flex-wrap: wrap;
     }
 }
