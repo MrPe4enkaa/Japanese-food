@@ -21,7 +21,7 @@ This is my first frontend project, built using HTML, CSS, and JavaScript. The pr
 ## Project Structure 
 
 ```plaintext
-project-root/
+Japanese-food/
 │── index.html
 │── catalog.html
 │── contacts.html
