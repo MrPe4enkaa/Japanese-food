@@ -40,11 +40,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
     if (count == 0) {
         headerRight.removeChild(buttOpen);
-        headerRight.innerHTML += '<button id="open" onclick="window.Okno.showModal()"><img src="/files/images/Header/avatar.png" alt="bag_png"></button>';
+        headerRight.innerHTML += '<button id="open" onclick="window.Okno.showModal()"><img src="files/images/Header/avatar.png" alt="bag_png"></button>';
     }
     else if (count == 1) {
         headerRight.removeChild(buttOpen);
-        headerRight.innerHTML += '<button id="open" onclick="window.Login.showModal()"><img src="/files/images/Header/avatar.png" alt="bag_png"></button>';
+        headerRight.innerHTML += '<button id="open" onclick="window.Login.showModal()"><img src="files/images/Header/avatar.png" alt="bag_png"></button>';
 
         log_name.value = log_user_name;
         log_phone.value = log_user_phone;

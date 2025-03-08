@@ -1,8 +1,8 @@
 @font-face {
     font-family: Inter-Regular;
-    src: url(/files/fonts/Inter-Regular.ttf);
+    src: url("../fonts/Inter-Regular.ttf");
 }
 @font-face {
     font-family: Inter-SemoBold;
-    src: url(/files/fonts/Inter-SemiBold.ttf);
+    src: url("../fonts/Inter-SemiBold.ttf");
 }

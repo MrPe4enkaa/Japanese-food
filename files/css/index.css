@@ -8,7 +8,7 @@ body {
 }
 
 .div_background {
-    background: url(/files/images/Main/First\ photo.jpg);
+    background: url("../images/Main/First photo.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
