@@ -1,0 +1,105 @@
+dialog{
+    padding: 0px;
+    border: none;
+    background-color: transparent;
+    outline-style: none;
+}
+.dialog{
+    width: 350px;
+    height: 450px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    border: none;
+    border-radius: 20px;
+    background: #FF7B7B;
+    input{
+        border: none;
+        border-radius: 5px;
+        width: 250px;
+        height: 30px;
+        text-align: justify;
+        outline-style: none;
+
+        color: black;
+        background-color: white;
+        font-family: Inter-SemoBold;
+        font-size: 12px;
+        padding-left: 8px;
+    }
+}
+
+.dialog2{
+    width: 350px;
+    height: 450px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    border: none;
+    border-radius: 20px;
+    background: #AAB54E;
+
+    input:disabled{
+        border: none;
+        border-radius: 5px;
+        width: 250px;
+        height: 30px;
+        text-align: justify;
+        outline-style: none;
+
+        color: black;
+        background-color: white;
+        font-family: Inter-SemoBold;
+        font-size: 12px;
+        padding-left: 8px;
+    }
+}
+
+.heading{
+    color: white;
+    font-size: 28px;
+    font-family: Inter-Regular;
+    margin: 10px;
+}
+.text{
+    text-align: center;
+    color: white;
+    font-size: 12.5px;
+    font-family: Inter-SemoBold;
+    margin: 15px;
+}
+.log{
+    width: 150px;
+    height: 35px;
+    border-radius: 8px;
+    background-color: white;
+    border: none;
+    color: black;
+    font-size: 11.5px;
+    font-family: Inter-SemoBold;
+    margin: 20px;
+    outline-style: none;
+}
+.log:active{
+    background-color: rgb(214, 214, 214);
+}
+.exit{
+    width: 80px;
+    height: 35px;
+    border-radius: 8px;
+    background-color: white;
+    border: none;
+    color: black;
+    font-size: 11.5px;
+    font-family: Inter-SemoBold;
+    outline-style: none;
+}
+.exit:active{
+    background-color: rgb(214, 214, 214);
+}
