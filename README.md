@@ -20,16 +20,18 @@ This is my first frontend project, built using HTML, CSS, and JavaScript. The pr
 
 ## Project Structure 
 
-/project-root
+```plaintext
+project-root/
 │── index.html
 │── catalog.html
 │── contacts.html
 │── basket.html
 │── css/          # Stylesheets
 │── js/           # Scripts
-│── data/         # Product data
+│── data/         # Product data (listOfProducts.js)
 │── images/       # Images and assets
 │── fonts/        # Custom fonts
+```
 
 ## How to Run  
 Simply open `index.html` in your browser
