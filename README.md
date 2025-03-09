@@ -35,3 +35,5 @@ Japanese-food/
 
 ## How to Run  
 Simply open `index.html` in your browser
+
+⭐ If you like this project, don't forget to star it on GitHub! ⭐
